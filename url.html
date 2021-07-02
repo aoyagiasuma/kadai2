@@ -1,0 +1,5 @@
+import re
+def url_host(url):
+    a=re.sub(r'(https?://)([^/]+).+',r'\2',url)
+    return a
+print( url_host('https://www.iniad.org/en/access') )
